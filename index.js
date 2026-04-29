@@ -62,6 +62,8 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization', 'x-auth-token']
 }));
 
+app.use(cors());
+app.options('*',cors());
 // Rate Limiting
 const authLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
