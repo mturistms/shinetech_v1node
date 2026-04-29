@@ -1,0 +1,163 @@
+# ===================================================================
+# SHINE TECH BIKEZ - PROFESSIONAL .GITIGNORE
+# ===================================================================
+# Production-ready .gitignore for React + Node.js + MySQL project
+# ===================================================================
+
+# ===================================================================
+# DEPENDENCIES (Never commit)
+# ===================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# ===================================================================
+# BUILD OUTPUTS (Regenerated on deploy)
+# ===================================================================
+client/dist/
+client/build/
+server/dist/
+server/build/
+*.tsbuildinfo
+
+# ===================================================================
+# ENVIRONMENT & SECRETS (CRITICAL - Never commit!)
+# ===================================================================
+.env
+.env.local
+.env.production
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# ===================================================================
+# DATABASE (Local data only)
+# ===================================================================
+*.sql.backup
+*.sql.bak
+*.db-journal
+mysql-data/
+*.sqlite
+*.sqlite3
+
+# ===================================================================
+# LOGS & TEMP FILES
+# ===================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+lib-cov/
+coverage/
+*.lcov
+.nyc_output/
+temp/
+tmp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# ===================================================================
+# OS GENERATED FILES
+# ===================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===================================================================
+# IDE & EDITOR SETTINGS (User-specific)
+# ===================================================================
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.iml
+*.ipr
+*.iws
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ===================================================================
+# AI ASSISTANT ARTIFACTS (Agent-specific)
+# ===================================================================
+.agent/
+.gemini/
+.cursor/
+.continue/
+
+# ===================================================================
+# CACHE & OPTIMIZATION
+# ===================================================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vite/
+.eslintcache
+.stylelintcache
+
+# ===================================================================
+# TESTING
+# ===================================================================
+coverage/
+.nyc_output/
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ===================================================================
+# MISC
+# ===================================================================
+*.orig
+*.rej
+*.patch
+tree.txt
+
+# ===================================================================
+# PROJECT-SPECIFIC CLEANUP SCRIPTS (Optional)
+# ===================================================================
+fix_*.sql
+fix_*.bat
+cleanup_*.sh
+
+# ===================================================================
+# COMPILED / BINARIES (Python, if used for scripts)
+# ===================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# ===================================================================
+# KEEP THESE (Explicitly NOT ignored)
+# ===================================================================
+# !.gitignore
+# !package.json
+# !package-lock.json
+# !README.md
+# !.env.example (template for environment variables)
