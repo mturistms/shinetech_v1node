@@ -15,7 +15,7 @@ const pool = mysql.createPool({
     queueLimit: 0,
     connectTimeout: 10000 // 10s,
     // Security: Explicitly disable multiple statements by default
-    multipleStatements: false,
+  /*  multipleStatements: false,*/
     // Character set for broad compatibility
     charset: 'utf8mb4_unicode_ci'
 });
