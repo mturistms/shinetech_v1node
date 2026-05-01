@@ -14,9 +14,6 @@ const pool = mysql.createPool({
     connectionLimit: 1000,
     queueLimit: 0,
     connectTimeout: 10000000 // 10s,
-     ssl: {
-    rejectUnauthorized: false
-  }
     // Security: Explicitly disable multiple statements by default
   /*  multipleStatements: false,*/
     // Character set for broad compatibility
