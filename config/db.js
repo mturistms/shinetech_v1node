@@ -17,7 +17,7 @@ const pool = mysql.createPool({
     // Security: Explicitly disable multiple statements by default
   /*  multipleStatements: false,*/
     // Character set for broad compatibility
-    charset: 'utf8mb4_unicode_ci'
+   /* charset: 'utf8mb4_unicode_ci'*/
 });
 
 // Test connection and log status
