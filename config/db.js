@@ -13,6 +13,7 @@ const pool = mysql.createPool({
     waitForConnections: true,
     connectionLimit: 10,
     queueLimit: 0,
+    connectTimeout: 10000 // 10s
     // Security: Explicitly disable multiple statements by default
     multipleStatements: false,
     // Character set for broad compatibility
