@@ -117,8 +117,8 @@ app.get('/api/health', (req, res) => {
 });
 
 // Apply rate limiting to auth routes
-app.use('/api/auth/login', authLimiter);
-app.use('/api/auth/register', authLimiter);
+app.use('/api/auth/login', unlimitedLimiter);
+app.use('/api/auth/register', unlimitedLimiter);
 
 // Apply general API rate limiting
 app.use('/api/', unlimitedLimiter);
@@ -141,6 +141,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
+ 
 // ============================================================================
 // ERROR HANDLING
 // ============================================================================
